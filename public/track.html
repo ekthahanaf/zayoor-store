@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track order | Zayoor</title>
+<meta name="description" content="Zayoor - trendy gadgets, fitness gear, bags and skin care. Cash on delivery.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Cpath d='M9 11h14l1 12H8z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12.5 11a3.5 3.5 0 0 1 7 0' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="container" style="max-width:720px"><div class="page-head"><h1>Track your order</h1><p style="color:var(--muted)">Enter your order number and the email you used at checkout.</p></div>
+<form class="panel" id="trackForm" style="margin:18px 0"><div class="msg err" id="err" hidden></div>
+<div class="row"><div class="field"><label for="order_no">Order number</label><input class="input" id="order_no" name="order_no" placeholder="ZY251011-ABC123" required></div>
+<div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" required></div></div>
+<button class="btn" type="submit">Track order</button></form><div id="result" style="margin-bottom:56px"></div></div>
+</main>
+<div id="site-footer"></div>
+<script src="/js/app.js"></script>
+<script src="/js/track.js"></script>
+</body>
+</html>

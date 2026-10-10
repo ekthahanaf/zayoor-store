@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Zayoor</title>
+<meta name="description" content="Zayoor - trendy gadgets, fitness gear, bags and skin care. Cash on delivery.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Cpath d='M9 11h14l1 12H8z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12.5 11a3.5 3.5 0 0 1 7 0' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="container"><div class="page-head"><div class="crumbs"><a href="/cart">Cart</a> / Checkout</div><h1>Checkout</h1></div>
+<div class="cart-layout"><form class="panel" id="checkoutForm" novalidate>
+  <h2>Delivery details</h2>
+  <div class="msg err" id="err" hidden></div>
+  <div class="msg ok" id="guestNote" hidden>Checking out as a guest. <a href="/login?next=/checkout"><u>Log in</u></a> to save your details.</div>
+  <div class="row"><div class="field"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" required maxlength="80"></div>
+  <div class="field"><label for="phone">Phone</label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="03xx xxxxxxx" required maxlength="20"></div></div>
+  <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required maxlength="120"><small>Needed to track your order.</small></div>
+  <div class="field"><label for="address">Full address</label><textarea class="textarea" id="address" name="address" autocomplete="street-address" required maxlength="250" placeholder="House, street, area"></textarea></div>
+  <div class="row"><div class="field"><label for="city">City</label><input class="input" id="city" name="city" autocomplete="address-level2" required maxlength="60"></div>
+  <div class="field"><label for="notes">Order notes (optional)</label><input class="input" id="notes" name="notes" maxlength="500"></div></div>
+  <h2 style="margin-top:8px">Payment</h2>
+  <div class="pay-opt"><input type="radio" checked disabled aria-label="Cash on delivery"><div><b>Cash on delivery</b><small>Pay the courier when your order arrives.</small></div></div>
+  <button class="btn btn-block" id="placeBtn" type="submit">Place order</button>
+</form>
+<aside class="panel"><h2>Your order</h2><div id="summary"></div></aside></div></div>
+</main>
+<div id="site-footer"></div>
+<script src="/js/app.js"></script>
+<script src="/js/checkout.js"></script>
+</body>
+</html>
