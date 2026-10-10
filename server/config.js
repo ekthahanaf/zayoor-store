@@ -27,11 +27,10 @@ module.exports = {
     shippingFee: Number(process.env.SHIPPING_FEE ?? 200),
     freeShippingOver: Number(process.env.FREE_SHIPPING_OVER ?? 3000),
   },
-    paths: {
+  paths: {
     root: path.join(__dirname, '..'),
     public: path.join(__dirname, '..', 'public'),
     uploads: process.env.DATA_DIR ? path.join(process.env.DATA_DIR, 'uploads') : path.join(__dirname, '..', 'uploads'),
     db: process.env.DATA_DIR ? path.join(process.env.DATA_DIR, 'store.db') : path.join(__dirname, '..', 'data', 'store.db'),
-  },
   },
 };
